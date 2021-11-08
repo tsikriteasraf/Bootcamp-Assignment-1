@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(/assets/image/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: darken soft-light;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+}
+
+small {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+main {
+  margin-top: 22.2em;
+}
+
+.btn-primary {
+  background-color: #dd6f0e;
+  border-color: #dd6f0e;
+}
+
+#dropdownMenuButton {
+  margin-left: 1.7em;
+}
+/*# sourceMappingURL=main.css.map */
