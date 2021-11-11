@@ -170,14 +170,14 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="myModalLabel">
-                                    Trainers Form
+                                Trainers Form
                                 </h5> 
                                 <button type="button" class="close" data-dismiss="modal">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form role="form">
+                                <form role="form" autocomplete="on">
                                     <div class="form-group">
                                          
                                         <label for="Name">
@@ -224,15 +224,15 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="myModalLabel">
-                                    Modal title
+                                <h5 class="modal-title" id="myTrainersLabel">
+                                    Delete the selected items
                                 </h5> 
                                 <button type="button" class="close" data-dismiss="modal">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <span>Are you sure you want to delete these rows?</span>
+                                <span>Are you sure you want to delete these rows?For changing just one thing hit the edit button!</span>
                                 
                             </div>
                             <div class="modal-footer">
@@ -253,9 +253,61 @@
             </div>
         </div>
     </div> 
-    <button id="editbtn" type="button" class="btn btn-success">
-        Edit
-    </button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="modal-583110" href="#modal-container-583110" role="button" class="btn btn-success" data-toggle="modal">Edit</a>
+			
+                <div class="modal fade" id="modal-container-583110" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myTrainerLabel">
+                                   Trainers Form
+                                </h5> 
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" autocomplete="on">
+                                    <div class="form-group">
+                                         
+                                        <label for="Name">
+                                            First Name*
+                                        </label>
+                                        <input type="text" class="form-control" id="Name" required pattern="[a-zA-Z]+" />
+                                    </div>
+                                    <label for="LastName">
+                                        Last Name*
+                                    </label>
+                                    <input type="text" class="form-control" id="LastName" required pattern="[a-zA-Z]+" />
+                                    <label for="Course">
+                                        Course Title*
+                                    </label>
+                                    <input type="text" class="form-control" id="Course" required pattern="[a-zA-Z]+|(c|C)#" />
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary">
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                 
+                                <button type="button" class="btn btn-primary">
+                                    Save changes
+                                </button> 
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -163,17 +163,30 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form role="form">
+                                <form role="form" autocomplete="on">
                                     <div class="form-group">
                                         <label for="TrainersName">
                                             Trainer's Name*
                                         </label>
                                         <input type="text" class="form-control" id="TrainerName" required pattern="[a-zA-Z]+" />
                                     </div>
-                                    <label for="Course">
-                                        Course Title*
-                                    </label>
-                                    <input type="text" class="form-control" id="Course" required pattern="[a-zA-Z]+|(c|C)#" />
+                                    <div class="form-group">
+                                                                 
+                                        <label for="Course">
+                                            Course Title*
+                                        </label>
+                                        <input list="listLanguages" type="text" class="form-control" id="Course" required pattern="[a-zA-Z]+|(c|C)#" />
+                                        <datalist id="listLanguages">
+                                            <option value="C">
+                                            <option value="C#">
+                                            <option value="Python">
+                                            <option value="Java">
+                                            <option value="Typescript">
+                                            <option value="F" >
+                                            <option value="PhP">
+                                        </datalist>
+
+                                    </div>
                                     </div>
                                     
                                     <button type="submit" class="btn btn-primary">
@@ -206,14 +219,14 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="myModalLabel">
-                                    Modal title
+                                 Delete the selected items
                                 </h5> 
                                 <button type="button" class="close" data-dismiss="modal">
                                     <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <span>Are you sure you want to delete these rows?</span>
+                                <span>Are you sure you want to delete these rows?For changing just one thing hit the edit button!</span>
                                 
                             </div>
                             <div class="modal-footer">
@@ -234,9 +247,69 @@
             </div>
         </div>
     </div> 
-    <button id="editbtn" type="button" class="btn btn-success">
-        Edit
-    </button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="modal-583110" href="#modal-container-583110" role="button" class="btn btn-success" data-toggle="modal">Edit</a>
+			
+                <div class="modal fade" id="modal-container-583110" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel">
+                                    Trainers Form
+                                </h5> 
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" autocomplete="on">
+                                    <div class="form-group" >
+                                        <label for="TrainersName">
+                                            Trainer's Name*
+                                        </label>
+                                        <input type="text" class="form-control" id="TrainerName"  pattern="[a-zA-Z]+" />
+                                    </div>
+                                    <div class="form-group">
+                                                                 
+                                        <label for="Course">
+                                            Course Title*
+                                        </label>
+                                        <input list="listLanguages" type="text" class="form-control" id="Course" pattern="[a-zA-Z]+|(c|C)#" />
+                                        <datalist id="listLanguages">
+                                            <option value="C">
+                                            <option value="C#">
+                                            <option value="Python">
+                                            <option value="Java">
+                                            <option value="Typescript">
+                                            <option value="F" >
+                                            <option value="PhP">
+                                        </datalist>
+
+                                    </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary">
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                 
+                                <button type="button" class="btn btn-primary">
+                                    Save changes
+                                </button> 
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </main>
 <footer>

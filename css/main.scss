@@ -33,3 +33,17 @@ main{
 #editbtn{
     margin-left: 1em;
 }
+input:invalid {
+    background-color: #ffdddd;
+  }
+  input:valid {
+    background-color: #ddffdd;
+
+  }
+  form:valid {
+    border: 5px solid #ddffdd;
+  }
+  input:required {
+    border-color: black;
+    border-width: 3px;
+  }
