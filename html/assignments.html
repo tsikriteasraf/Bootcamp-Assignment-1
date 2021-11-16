@@ -101,19 +101,19 @@
                             </td>
                             <td>
                                 <label for="edit">Edit</label>
-                                <input id="edit" type="radio" name="row1" value="1" />
+                                <input id="edit" type="checkbox" name="row1" value="1" />
                                 <label for="delete">Delete</label>
-                                <input id="delete" type="radio" name="row1" value="2" />
+                                <input id="delete" type="checkbox" name="row1" value="2" />
                             </td>
                             <tr>
                                 <td>
-                                    1
+                                    2
                                 </td>
                                 <td>
                                    Assignment 2
                                 </td>
                                 <td>
-                                    <a href="/assets/pdfsIndividualProject_PART_A.pdf" target="blank">Description.pdf</a>
+                                    <a href="/assets/pdfs/IndividualProject_PART_A.pdf" target="blank">Description.pdf</a>
                                 </td>
                                 <td>
                                     20/12/2021
@@ -126,9 +126,9 @@
                                 </td>
                                 <td>
                                     <label for="edit">Edit</label>
-                                    <input id="edit" type="radio" name="row2" value="1" />
+                                    <input id="edit" type="checkbox" name="row2" value="1" />
                                     <label for="delete">Delete</label>
-                                    <input id="delete" type="radio" name="row2" value="2" />
+                                    <input id="delete" type="checkbox" name="row2" value="2" />
                                 </td>
                             </tr>
                             <tr>
@@ -152,9 +152,9 @@
                                 </td>
                                 <td>
                                     <label for="edit">Edit</label>
-                                    <input id="edit" type="radio" name="row3" value="1" />
+                                    <input id="edit" type="checkbox" name="row3" value="1" />
                                     <label for="delete">Delete</label>
-                                    <input id="delete" type="radio" name="row3" value="2" />
+                                    <input id="delete" type="checkbox" name="row3" value="2" />
                                 </td>
                             </tr>
                             <tr>
@@ -178,9 +178,9 @@
                                 </td>
                                 <td>
                                     <label for="edit">Edit</label>
-                                    <input id="edit" type="radio" name="row4" value="1" />
+                                    <input id="edit" type="checkbox" name="row4" value="1" />
                                     <label for="delete">Delete</label>
-                                    <input id="delete" type="radio" name="row4" value="2" />
+                                    <input id="delete" type="checkbox" name="row4" value="2" />
                                 </td>
                             </tr>
                             <tr>
@@ -204,9 +204,9 @@
                                 </td>
                                 <td>
                                     <label for="edit">Edit</label>
-                                    <input id="edit" type="radio" name="row5" value="1" />
+                                    <input id="edit" type="checkbox" name="row5" value="1" />
                                     <label for="delete">Delete</label>
-                                    <input id="delete" type="radio" name="row5" value="2" />
+                                    <input id="delete" type="checkbox" name="row5" value="2" />
                                 </td>
                             </tr>
                     </tbody>
@@ -237,7 +237,7 @@
                                         <label for="assignmentTitle">
                                             Title
                                         </label>
-                                        <input type="text" class="form-control" id="assignmentTitle" />
+                                        <input type="text" class="form-control" id="assignmentTitle" required />
                                     </div>
                                     <div class="form-group">
                                         <label for="Oralmark">
@@ -255,10 +255,8 @@
                                          <label for="exampleInputFile">
                                             Description pdf
                                         </label>
-                                        <input type="file" class="form-control-file" id="exampleInputFile" />
-                                        <p class="help-block">
-                                            Example block-level help text here.
-                                        </p>
+                                        <input type="file" class="form-control-file" id="exampleInputFile" required/>
+                                       
                                     </div>
                                     <button type="submit" class="btn btn-primary">
                                         Submit
@@ -347,11 +345,11 @@
                                         <label for="Oralmark">
                                             Oral Mark
                                          </label>
-                                         <input type="number" class="form-control" id="Oralmark" required pattern="[0-9]+" min="0" max="100"/>
+                                         <input type="number" class="form-control" id="Oralmark"  pattern="[0-9]+" min="0" max="100" placeholder="67"/>
                                          <label for="Totalmark">
                                             Total Mark
                                          </label>
-                                         <input type="number" class="form-control" id="Totalmark" required pattern="[0-9]+" min="0" max="100"/>
+                                         <input type="number" class="form-control" id="Totalmark" pattern="[0-9]+" min="0" max="100" placeholder="88"/>
                                          <label for="startDate">
                                             Submit Date*
                                         </label>
@@ -360,9 +358,7 @@
                                             Description pdf
                                         </label>
                                         <input type="file" class="form-control-file" id="exampleInputFile" />
-                                        <p class="help-block">
-                                            Example block-level help text here.
-                                        </p>
+                                       
                                     </div>
                                     <button type="submit" class="btn btn-primary">
                                         Submit
